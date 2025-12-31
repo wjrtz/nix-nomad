@@ -7,7 +7,7 @@
     gomod2nix.inputs.flake-utils.follows = "flake-utils";
     nixpkgs-lib.url = "github:nix-community/nixpkgs.lib";
     nixpkgs.url = "github:nixos/nixpkgs/release-25.11";
-    nmd.url = github:gvolpe/nmd;
+    nmd.url = "github:gvolpe/nmd";
   };
 
   outputs = { self, nixpkgs, nixpkgs-lib, flake-utils, gomod2nix, nmd, ... }: flake-utils.lib.eachDefaultSystem
